@@ -1,0 +1,214 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+   background-color: black;
+   height: 25vh;
+}
+
+.header-card-detail {
+   background-color: #b30a59;
+   height: 10vh;
+}
+
+.logo-img {
+   width: 10vh;
+}
+
+.logo-img>img {
+   width: 180px;
+}
+
+
+.navbar {
+   height: 10vh;
+}
+
+.btn-header {
+   background-color: #9D9D9D;
+   width: 75px;
+   height: 15vh;
+   border: none;
+   font-size: 3rem;
+   text-decoration: none;
+   color: #b30a59;
+   text-align: start;
+}
+
+.navbar-light .navbar-toggler {
+
+   border-color: #b30a59;
+}
+
+.navbar-toggler:focus {
+   color: #b30a59;
+
+}
+
+.page-container {
+   background-color: #9D9D9D;
+   height: 15vh;
+   /* width: 100%; */
+}
+
+.card {
+
+   min-height: 650px;
+}
+
+.img-cards {
+   height: 20rem;
+   object-fit: cover;
+}
+
+.page {
+   color: #b30a59;
+}
+
+.nav-link {
+   background-color: #79B4B7;
+   margin: 1rem;
+   color: black
+}
+
+.nav-link:hover {
+   color: #b30a59;
+}
+
+.navbar-brand {
+   background-color: blueviolet;
+   padding: 1rem;
+}
+
+.category-container {
+   background-color: #F8F0DF;
+   min-height: 65vh;
+
+}
+
+.contact-container {
+   background-color: #F8F0DF;
+   min-height: 80vh;
+}
+
+.footer-container {
+   height: 10vh;
+   background-color: #79B4B7;
+   width: 100%;
+}
+
+.lupa-btn>img {
+   width: 28px;
+}
+
+.lupa-btn {
+   background-color: #79B4B7;
+
+}
+
+.input-buscador {
+   font-size: 1.2rem;
+}
+
+.text-footer {
+   width: 50vw;
+}
+
+.redes-container {
+   width: 50vw;
+}
+
+h4 {
+   width: 100%;
+   text-align: center;
+   color: #b30a59;
+}
+
+label {
+   text-align: center;
+}
+
+.bg-nav {
+   background-color: #79B4B7;
+}
+
+.footer-container>a {
+   text-decoration: none;
+   background-color: #79B4B7;
+}
+
+.footer-img {
+   background-color: #b30a59;
+   border-radius: 50%;
+   width: 45px;
+
+}
+
+.btn {
+   background-color: #b30a59;
+}
+
+th {
+   color: #b30a59;
+}
+
+a:hover {
+   color: #b30a59;
+}
+
+.img-fluid {
+   height: 18rem;
+}
+
+/*MEDIA-QUERIES*/
+@media (max-width:767px) {
+   .page-container {
+      width: 100%;
+
+   }
+
+   .btn-header {
+      background-color: #9D9D9D;
+      width: 100%;
+      height: 15vh;
+      border: none;
+      font-size: 1.15rem;
+      text-decoration: none;
+      color: #b30a59;
+   }
+
+   .nav-link {
+      background-color: #79B4B7;
+      padding: 1rem;
+      margin: 0;
+      color: black
+   }
+
+
+   .footer-container>div>a>img {
+      width: 25px;
+   }
+
+
+
+   .redes-container {
+      display: flex;
+
+   }
+
+   .redes-container>a {
+      margin: 12px;
+   }
+
+   h4 {
+      font-size: 1rem;
+      margin-bottom: 0px;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+}
