@@ -30,7 +30,7 @@ async function getDataEventos() {
    })
 
    let checkBoxes = document.querySelectorAll('input[type=checkbox]');
-   console.log(checkBoxes)
+   //console.log(checkBoxes)
    let checkBoxChequeados = []
 
    checkBoxes.forEach(checkBox => checkBox.addEventListener('change', (evento) => {

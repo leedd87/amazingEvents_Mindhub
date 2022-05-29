@@ -20,7 +20,7 @@ async function getDataEventos() {
 
 
    /* TABLA 1 */
-   let arrayPorcentajeYEvento = [];
+   let arrayPorcentajeYEvento = []; //es el array donde pusheo un nuevo objeto con propiedades eventos y procentaje de Asistencia
    arrayEventosPasados.map(eventos => {
       arrayPorcentajeYEvento.push({
          eventos: eventos.name,
@@ -38,7 +38,7 @@ async function getDataEventos() {
 
    //console.log(minimoPorcentajeYEvento)
 
-   let capacidadMaxima = arrayEventosPasados.filter(e => e.capacity).sort((a, b) => b.capacity - a.capacity)[0]
+   let capacidadMaxima = arrayEventos.filter(e => e.capacity).sort((a, b) => b.capacity - a.capacity)[0]
 
    // console.log(capacidadMaxima)
 
@@ -51,8 +51,7 @@ async function getDataEventos() {
 
    arrayCategoriasFuturas = [...arrayCategoriasFuturas];
 
-   let categoriaValueFuturo = [];
-
+   let categoriaValueFuturo = []; //"reordeno" y creo un nuevo objeto donde separo creando una propiedad categoria y una propiedad eventos donde junto en un array todos los eventos de esa categoria
    arrayCategoriasFuturas.map(categoria => {
       categoriaValueFuturo.push({
          category: categoria,

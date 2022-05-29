@@ -12,7 +12,7 @@ async function getDataEventos() {
       .then(response => response.json())
       .then(json => arrayData = json)
 
-   console.log(arrayData)
+   //console.log(arrayData)
 
    arrayEventos = arrayData.events;
    fechaActual = arrayData.currentDate;
@@ -52,7 +52,7 @@ async function getDataEventos() {
                evento.category == chequeadoValue && evento.name.toLowerCase().includes(searchInput.toLowerCase().trim())
             ))
          })
-         console.log(tarjetasFiltradas)
+         //console.log(tarjetasFiltradas)
 
 
       } else if (checkBoxChequeados.length > 0 && searchInput == "") {
@@ -72,7 +72,7 @@ async function getDataEventos() {
          tarjetasFiltradas.push(...arrayEventos)
       }
 
-      console.log(tarjetasFiltradas)
+      //console.log(tarjetasFiltradas)
       crearTarjetas(tarjetasFiltradas);
 
    }
