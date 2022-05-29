@@ -13,7 +13,7 @@ async function getDataEventos() {
       .then(response => response.json())
       .then(json => arrayData = json)
 
-   console.log(arrayData)
+   //console.log(arrayData)
 
    arrayEventos = arrayData.events;
    fechaActual = arrayData.currentDate;
@@ -36,7 +36,7 @@ async function getDataEventos() {
 
    let checkBoxes = document.querySelectorAll('input[type=checkbox]');
    let checkBoxChequeados = []
-   console.log(checkBoxes)
+   //console.log(checkBoxes)
 
    checkBoxes.forEach(checkBox => checkBox.addEventListener('change', (evento) => {
 
