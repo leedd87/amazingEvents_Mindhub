@@ -104,7 +104,7 @@ function crearTarjetasPasadas(array) {
       <p class="card-text">Date: ${element.date}</p>
       <div class="d-flex justify-content-evenly align-items-center">
       <p class="mx-3 my-0">$${element.price}</p>
-      <a href="./cardDetail.html?id=${element._id}" class="btn">Go somewhere</a>
+      <a href="./cardDetail.html?id=${element._id}" class="btn">See more</a>
       </div>
       </div>
       </div>

@@ -163,6 +163,14 @@ a:hover {
    height: 18rem;
 }
 
+td {
+   width: 33.33%;
+}
+
+.card-text {
+   min-height: 5rem;
+}
+
 /*MEDIA-QUERIES*/
 @media (max-width:767px) {
    .page-container {

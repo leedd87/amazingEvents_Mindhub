@@ -6,7 +6,6 @@ let arrayEventos
 let arrayData
 let fechaActual
 let searchInput = '';
-console.log(arrayEventos)
 
 async function getDataEventos() {
    await fetch("https://amazing-events.herokuapp.com/api/events")
@@ -84,20 +83,6 @@ async function getDataEventos() {
 
 getDataEventos();
 
-// let path = window.location.pathname;
-
-// if (path == '/index.html') {
-//    crearTarjetas();
-// }
-
-// if (path == '/pages/pastEvents.html') {
-//    crearTarjetasPasadas();
-// }
-
-// if (path == '/pages/upcomingEvents.html') {
-//    crearTarjetasUpcoming();
-// }
-
 function crearTarjetas(array) {
 
    let tarjetasHtml = ''
@@ -116,7 +101,7 @@ function crearTarjetas(array) {
                   <p class="card-text">Date: ${element.date}</p>
                   <div class="d-flex justify-content-evenly align-items-center">
                   <p class="mx-3 my-0">$${element.price}</p>
-                  <a href="./pages/cardDetail.html?id=${element._id}" class="btn">Go somewhere</a>
+                  <a href="./pages/cardDetail.html?id=${element._id}" class="btn">See more</a>
                   </div>
                   </div>
                   </div>
@@ -130,8 +115,6 @@ function crearTarjetas(array) {
    }
 
 }
-
-
 
 function crearCheckBox(array) {
    let checkBoxHtml = '';
