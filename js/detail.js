@@ -2,7 +2,7 @@ let arrayEventos
 let contenedorDetail = document.getElementById('contenedorDetail');
 
 async function getDataEventos() {
-   await fetch("https://amazing-events.herokuapp.com/api/events")
+   await fetch("https://mindhub-xj03.onrender.com/api/amazing")
       .then(response => response.json())
       .then(json => arrayData = json)
 
